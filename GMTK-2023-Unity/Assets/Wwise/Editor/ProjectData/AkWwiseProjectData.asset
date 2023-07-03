@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1412f76f7b65344585854050853ad7cb
     GuidInternal: 
-    m_lastTime: -8585131790551114163
+    m_lastTime: -8585132648468778152
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ea1a3b7ec850c346a757fda26d3542be
     GuidInternal: 
-    m_lastTime: -8585131790551284681
+    m_lastTime: -8585132648472383194
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -101,7 +101,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: cc0f4bda4406c54ab7487dcd7bef831a
     GuidInternal: 
-    m_lastTime: -8585131790551150366
+    m_lastTime: -8585132648468948308
     List:
     - name: Main
       guid: 5d71dbaf1a5a2b46903e2e4102b8422c
@@ -129,7 +129,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c39280528e8dad40a4a0d56025399269
     GuidInternal: 
-    m_lastTime: -8585131790551350660
+    m_lastTime: -8585132648474662540
     List:
     - name: Footsteps
       guid: 64ae9063d1cf034299496d299e4d6d98
@@ -145,9 +145,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 64ae9063d1cf034299496d299e4d6d98
       Path: Events\Default Work Unit\Footsteps
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 100
+      maxDuration: 0.8593651
+      minDuration: 0.386644
     - name: Music
       guid: f263453e4da19f46845d0ecf19d032a8
       id: 3991942870
@@ -177,7 +177,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7cdb56a7bbbb04489592a25988b760e7
     GuidInternal: 
-    m_lastTime: -8585131790551340647
+    m_lastTime: -8585132648474662540
     List:
     - name: MasterVolume
       guid: 90555eff53461e44a717cb4bfc896f03
@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7b22d0f78574d54ba2a877c11db531fa
     GuidInternal: 
-    m_lastTime: -8585131790551145056
+    m_lastTime: -8585132648468918272
     List:
     - name: MusicStates
       guid: 3cc21e9b2325aa4fa800839069434a1b
@@ -313,7 +313,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e68900f7e331bd429781f648d7e24902
     GuidInternal: 
-    m_lastTime: -8585131790551139891
+    m_lastTime: -8585132648468888250
     List:
     - name: Footsteps
       guid: 3c6aa62b9dd358468e1de9cc015f3acb
@@ -409,10 +409,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 9740a75afd10054ebc80b20b0be9f42f
     GuidInternal: 
-    m_lastTime: -8585131790551134728
+    m_lastTime: -8585132648468858213
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 04000000050000000600000007000000090000000a0000000b0000000c0000000d0000000e0000000f0000001100000014000000600200006102000059030000e4180200
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
