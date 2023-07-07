@@ -145,9 +145,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 64ae9063d1cf034299496d299e4d6d98
       Path: Events\Default Work Unit\Footsteps
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 100
+      maxDuration: 0.8593651
+      minDuration: 0.386644
     - name: Music
       guid: f263453e4da19f46845d0ecf19d032a8
       id: 3991942870

@@ -6,12 +6,12 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private GameObject _pauseScreen;
 
-    void Start()
+    private void Start()
     {
         ResumeGame();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
@@ -31,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         Time.timeScale = 1f;
         _pauseScreen.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void PauseGame()
@@ -38,5 +39,6 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         Time.timeScale = 0;
         _pauseScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 }
