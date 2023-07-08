@@ -24,6 +24,11 @@ public class HeroAI : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (_target == null)
+        {
+            return;
+        }
+
         if (_agent.enabled)
         {
             _agent.SetDestination(_target.transform.position);

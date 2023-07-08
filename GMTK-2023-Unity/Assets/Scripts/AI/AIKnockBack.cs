@@ -1,25 +1,23 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AIKnockBack : KnockBack
 {
     private RagdollEnabler ragdollEnabler;
+    private Rigidbody[] rigidbodies;
+
 
     private void Awake()
     {
         ragdollEnabler = GetComponent<RagdollEnabler>();
+        rigidbodies = GetComponentsInChildren<Rigidbody>();
     }
 
     public override void KnockCharacterBack(Vector3 force)
     {
         ragdollEnabler.EnableRagdoll();
-        GetComponent<Rigidbody>().AddForce(force);
-        StartCoroutine(DisableRagdollAfterTime());
-    }
-
-    private IEnumerator DisableRagdollAfterTime()
-    {
-        yield return new WaitForSeconds(2);
-        ragdollEnabler.EnableAnimator();
+        foreach (var rigidbody in rigidbodies)
+        {
+            rigidbody.AddForce(force, ForceMode.Impulse);
+        }
     }
 }

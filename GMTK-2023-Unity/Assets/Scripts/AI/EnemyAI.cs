@@ -1,12 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private GameObject _target;
+    [SerializeField] private Animator _animator;
 
     private NavMeshAgent _agent;
+    private AIWeapon _weapon;
+    private AIState _state = AIState.Persue;
+    private bool _attackInProgress = false;
 
     private void Start()
     {
@@ -14,14 +19,30 @@ public class EnemyAI : MonoBehaviour
         {
             _agent = GetComponent<NavMeshAgent>();
         }
+        _weapon = GetComponent<AIWeapon>();
+        var ragdollEnabler = GetComponent<RagdollEnabler>();
+        ragdollEnabler.OnRagdollDisable = () =>
+        {
+            SetState(AIState.Persue);
+        };
+        ragdollEnabler.OnRagdollEnable = () =>
+        {
+            SetState(AIState.KockedBack);
+        };
     }
 
     private void Update()
     {
-        if (_agent.enabled && _agent.isOnNavMesh)
+        switch (_state)
         {
-            _agent.SetDestination(_target.transform.position);
+            case AIState.Persue:
+                PersueTarget();
+                break;
+            case AIState.Attack:
+                Attack();
+                break;
         }
+        UpdateAnimationParams();
     }
 
     public void Disable()
@@ -32,4 +53,76 @@ public class EnemyAI : MonoBehaviour
         }
         _agent.enabled = false;
     }
+
+    private void PersueTarget()
+    {
+        if (_agent.enabled && _agent.isOnNavMesh)
+        {
+            _agent.SetDestination(_target.transform.position);
+        }
+
+        var affectedObjects = _weapon.GetObjectsInRange();
+        if (affectedObjects.Count > 0 && _weapon.IsReady())
+        {
+            SetState(AIState.Attack);
+        }
+    }
+
+    private void Attack()
+    {
+        if (_attackInProgress)
+        {
+            return;
+        }
+
+        _attackInProgress = true;
+        var affectedObjects = _weapon.GetObjectsInRange();
+        if (affectedObjects.Count > 0)
+        {
+            Debug.Log($"{gameObject.name} triggered attack.");
+            _animator.SetTrigger("attack");
+
+            //Sometimes character gets stuck in attack state if animation gets interrupted.
+            //This is needed to revert that after some time.
+            StartCoroutine(SetStateAfterTime(AIState.Persue, 5f));
+        }
+    }
+
+    public void CompleteAttack()
+    {
+        Debug.Log($"{gameObject.name} has attacked.");
+        _weapon.Activate();
+        SetState(AIState.Persue);
+    }
+
+    private void UpdateAnimationParams()
+    {
+        if (_agent.enabled && _agent.isOnNavMesh)
+        {
+            _animator.SetFloat("speed", _agent.velocity.sqrMagnitude);
+        }
+        else
+        {
+            _animator.SetFloat("speed", 0);
+        }
+    }
+
+    private void SetState(AIState newState)
+    {
+        _state = newState;
+        _attackInProgress = false;
+    }
+
+    private IEnumerator SetStateAfterTime(AIState newState, float time)
+    {
+        yield return new WaitForSeconds(time);
+        SetState(newState);
+    }
+}
+
+internal enum AIState
+{
+    Persue = 0,
+    Attack = 1,
+    KockedBack = 2
 }
