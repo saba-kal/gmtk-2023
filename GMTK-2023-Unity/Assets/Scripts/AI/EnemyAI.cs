@@ -5,21 +5,23 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private GameObject _target;
     [SerializeField] private Animator _animator;
 
+    private GameObject _target;
     private NavMeshAgent _agent;
     private AIWeapon _weapon;
     private AIState _state = AIState.Persue;
     private bool _attackInProgress = false;
 
+    private void Awake()
+    {
+        _agent = GetComponent<NavMeshAgent>();
+        _weapon = GetComponent<AIWeapon>();
+        _target = FindObjectOfType<HeroAI>().gameObject;
+    }
+
     private void Start()
     {
-        if (_agent == null)
-        {
-            _agent = GetComponent<NavMeshAgent>();
-        }
-        _weapon = GetComponent<AIWeapon>();
         var ragdollEnabler = GetComponent<RagdollEnabler>();
         ragdollEnabler.OnRagdollDisable = () =>
         {
@@ -70,6 +72,11 @@ public class EnemyAI : MonoBehaviour
 
     private void Attack()
     {
+        if (_agent.enabled && _agent.isOnNavMesh)
+        {
+            _agent.SetDestination(_target.transform.position);
+        }
+
         if (_attackInProgress)
         {
             return;
