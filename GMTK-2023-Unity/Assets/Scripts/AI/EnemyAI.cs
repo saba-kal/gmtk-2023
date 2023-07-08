@@ -10,11 +10,26 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
-        _agent = GetComponent<NavMeshAgent>();
+        if (_agent == null)
+        {
+            _agent = GetComponent<NavMeshAgent>();
+        }
     }
 
     private void Update()
     {
-        _agent.SetDestination(_target.transform.position);
+        if (_agent.enabled)
+        {
+            _agent.SetDestination(_target.transform.position);
+        }
+    }
+
+    public void Disable()
+    {
+        if (_agent == null)
+        {
+            _agent = GetComponent<NavMeshAgent>();
+        }
+        _agent.enabled = false;
     }
 }
