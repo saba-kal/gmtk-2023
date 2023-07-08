@@ -24,7 +24,7 @@ public class HeroAI : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (_target == null)
+        if (_target == null || GameManager.GameIsOver)
         {
             return;
         }

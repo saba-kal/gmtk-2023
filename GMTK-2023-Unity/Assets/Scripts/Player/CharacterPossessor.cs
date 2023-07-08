@@ -11,30 +11,25 @@ public class CharacterPossessor : MonoBehaviour
     private CharacterController _characterController;
     private FirstPersonController _firstPersonController;
     private EnemyAI _possessedCharacter;
+    private PlayerHealth _playerHealth;
 
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _firstPersonController = GetComponent<FirstPersonController>();
+        _playerHealth = GetComponent<PlayerHealth>();
         PossessRandomCharacter();
     }
 
-    private void Update()
+    public bool PossessRandomCharacter()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            PossessRandomCharacter();
-        }
-    }
-
-    private void PossessRandomCharacter()
-    {
-
-        var enemyCharacters = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None).Where(x => x.tag != "Hero").ToList();
+        var enemyCharacters = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None)
+            .Where(x => x.tag != "Hero" && !x.Disabled)
+            .ToList();
         if (enemyCharacters.Count == 0)
         {
             Debug.LogWarning("No more character left to possess.");
-            return;
+            return false;
         }
 
         var characterIndex = Random.Range(0, enemyCharacters.Count);
@@ -42,6 +37,7 @@ public class CharacterPossessor : MonoBehaviour
         _possessedCharacter.Disable();
 
         StartCoroutine(MoveTowardsPossesedCharacter());
+        return true;
     }
 
     private IEnumerator MoveTowardsPossesedCharacter()
@@ -65,5 +61,8 @@ public class CharacterPossessor : MonoBehaviour
         _characterController.enabled = true;
         _firstPersonController.enabled = true;
         Destroy(_possessedCharacter.gameObject);
+
+        CharacterInfo.Instance?.SetCharacterInfo(_possessedCharacter.Name, _possessedCharacter.MaxHealth);
+        _playerHealth.SetHealth(_possessedCharacter.MaxHealth);
     }
 }

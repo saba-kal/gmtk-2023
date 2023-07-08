@@ -49,11 +49,17 @@ public class Hammer : AIWeapon
             var knockBack = potentialEnemy.GetComponent<KnockBack>();
             knockBack?.KnockCharacterBack(direction * force);
 
-            if (potentialEnemy.GetComponent<CharacterPossessor>() == null)
+            var playerHealth = potentialEnemy.GetComponent<PlayerHealth>();
+            if (playerHealth == null)
             {
                 Destroy(potentialEnemy, 10f);
             }
+            else
+            {
+                playerHealth.TakeDamage(1);
+            }
         }
+
         RemoveDeletedEnemyCharacters();
     }
 

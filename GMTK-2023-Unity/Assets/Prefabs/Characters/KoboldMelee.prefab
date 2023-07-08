@@ -104,7 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bd9e8a13b23674da94f377bb7f73e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 0}
+  Name: Kobold Warrior
+  MaxHealth: 3
   _animator: {fileID: 6098055371838711935}
 --- !u!114 &8584095840590333978
 MonoBehaviour:

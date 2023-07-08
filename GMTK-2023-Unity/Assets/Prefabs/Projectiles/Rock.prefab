@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 5
+  destroyOnHit: 0
   rigidbody: {fileID: 6638266282746297061}
+  effectPrefab: {fileID: 0}
 --- !u!1001 &5473067998897716960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113,32 +115,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 17.582796
+      value: 0.15247962
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 17.582796
+      value: 0.15247962
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 17.582796
+      value: 0.15247962
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.010593
+      value: 0.010099
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0011621
+      value: -0.0030411
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0049514
+      value: 0.014737
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}
@@ -174,6 +176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58553dc29b4d86541ab1d1fb6431a46d,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 58553dc29b4d86541ab1d1fb6431a46d,
         type: 3}

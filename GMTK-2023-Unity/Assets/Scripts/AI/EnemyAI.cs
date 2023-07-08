@@ -5,6 +5,11 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
+    public bool Disabled { get; private set; } = false;
+
+    public string Name;
+    public int MaxHealth;
+
     [SerializeField] private Animator _animator;
 
     private GameObject _target;
@@ -20,21 +25,13 @@ public class EnemyAI : MonoBehaviour
         _target = FindObjectOfType<HeroAI>().gameObject;
     }
 
-    private void Start()
-    {
-        var ragdollEnabler = GetComponent<RagdollEnabler>();
-        ragdollEnabler.OnRagdollDisable = () =>
-        {
-            SetState(AIState.Persue);
-        };
-        ragdollEnabler.OnRagdollEnable = () =>
-        {
-            SetState(AIState.KockedBack);
-        };
-    }
-
     private void Update()
     {
+        if (GameManager.GameIsOver)
+        {
+            return;
+        }
+
         switch (_state)
         {
             case AIState.Persue:
@@ -54,6 +51,7 @@ public class EnemyAI : MonoBehaviour
             _agent = GetComponent<NavMeshAgent>();
         }
         _agent.enabled = false;
+        Disabled = true;
     }
 
     private void PersueTarget()
