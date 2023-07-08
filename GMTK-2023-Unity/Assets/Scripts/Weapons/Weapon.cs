@@ -22,5 +22,15 @@ public abstract class Weapon : MonoBehaviour
         Fire();
     }
 
+    public bool IsReady()
+    {
+        return _timeSinceLastActivation >= _coolDown;
+    }
+
+    public void ResetCooldown()
+    {
+        _timeSinceLastActivation = 0;
+    }
+
     protected abstract void Fire();
 }

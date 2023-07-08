@@ -48,7 +48,13 @@ public class Hammer : AIWeapon
             var direction = (potentialEnemy.transform.position - transform.position).normalized;
             var knockBack = potentialEnemy.GetComponent<KnockBack>();
             knockBack?.KnockCharacterBack(direction * force);
+
+            if (potentialEnemy.GetComponent<CharacterPossessor>() == null)
+            {
+                Destroy(potentialEnemy, 10f);
+            }
         }
+        RemoveDeletedEnemyCharacters();
     }
 
     private void RemoveDeletedEnemyCharacters()

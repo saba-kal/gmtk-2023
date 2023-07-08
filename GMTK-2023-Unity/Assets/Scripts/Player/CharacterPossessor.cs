@@ -1,6 +1,5 @@
 using StarterAssets;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -12,13 +11,11 @@ public class CharacterPossessor : MonoBehaviour
     private CharacterController _characterController;
     private FirstPersonController _firstPersonController;
     private EnemyAI _possessedCharacter;
-    private List<EnemyAI> _enemyCharacters;
 
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _firstPersonController = GetComponent<FirstPersonController>();
-        _enemyCharacters = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None).Where(x => x.tag != "Hero").ToList();
         PossessRandomCharacter();
     }
 
@@ -32,15 +29,16 @@ public class CharacterPossessor : MonoBehaviour
 
     private void PossessRandomCharacter()
     {
-        if (_enemyCharacters.Count == 0)
+
+        var enemyCharacters = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None).Where(x => x.tag != "Hero").ToList();
+        if (enemyCharacters.Count == 0)
         {
             Debug.LogWarning("No more character left to possess.");
             return;
         }
 
-        var characterIndex = Random.Range(0, _enemyCharacters.Count);
-        _possessedCharacter = _enemyCharacters[characterIndex];
-        _enemyCharacters.RemoveAt(characterIndex);
+        var characterIndex = Random.Range(0, enemyCharacters.Count);
+        _possessedCharacter = enemyCharacters[characterIndex];
         _possessedCharacter.Disable();
 
         StartCoroutine(MoveTowardsPossesedCharacter());
