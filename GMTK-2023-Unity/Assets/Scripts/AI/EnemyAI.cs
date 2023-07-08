@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (_agent.enabled)
+        if (_agent.enabled && _agent.isOnNavMesh)
         {
             _agent.SetDestination(_target.transform.position);
         }

@@ -14,8 +14,6 @@ public class CharacterPossessor : MonoBehaviour
     private EnemyAI _possessedCharacter;
     private List<EnemyAI> _enemyCharacters;
 
-    private int _currentCharacterIndex = -1;
-
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
@@ -40,25 +38,9 @@ public class CharacterPossessor : MonoBehaviour
             return;
         }
 
-        var newCharacterIndex = Random.Range(0, _enemyCharacters.Count);
-        var tries = 0;
-        const int maxTries = 10;
-        while (newCharacterIndex == _currentCharacterIndex && tries < maxTries)
-        {
-            newCharacterIndex = Random.Range(0, _enemyCharacters.Count);
-            tries++;
-        }
-
-        if (tries >= maxTries)
-        {
-            Debug.LogError($"Could not generate random character index after {maxTries} tries.");
-            return;
-        }
-
-
-        _currentCharacterIndex = newCharacterIndex;
-        _possessedCharacter = _enemyCharacters[newCharacterIndex];
-        _enemyCharacters.RemoveAt(_currentCharacterIndex);
+        var characterIndex = Random.Range(0, _enemyCharacters.Count);
+        _possessedCharacter = _enemyCharacters[characterIndex];
+        _enemyCharacters.RemoveAt(characterIndex);
         _possessedCharacter.Disable();
 
         StartCoroutine(MoveTowardsPossesedCharacter());
@@ -84,6 +66,6 @@ public class CharacterPossessor : MonoBehaviour
 
         _characterController.enabled = true;
         _firstPersonController.enabled = true;
-        _possessedCharacter.gameObject.SetActive(false);
+        Destroy(_possessedCharacter.gameObject);
     }
 }
