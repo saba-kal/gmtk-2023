@@ -598,7 +598,7 @@ PrefabInstance:
     - target: {fileID: 6872352963637466636, guid: 07c2a8aac2e4a38428d62b40af47f320,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.82
+      value: 5.709
       objectReference: {fileID: 0}
     - target: {fileID: 6872352963637466636, guid: 07c2a8aac2e4a38428d62b40af47f320,
         type: 3}
@@ -1211,7 +1211,7 @@ PrefabInstance:
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.47
+      value: 4.737
       objectReference: {fileID: 0}
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
@@ -8391,7 +8391,7 @@ PrefabInstance:
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.1
+      value: 12.186
       objectReference: {fileID: 0}
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
@@ -11197,7 +11197,7 @@ PrefabInstance:
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.92
+      value: 5.766
       objectReference: {fileID: 0}
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
@@ -13233,7 +13233,7 @@ PrefabInstance:
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.449
+      value: 7.825
       objectReference: {fileID: 0}
     - target: {fileID: 6872352963637466636, guid: cf9dab9c54f0d254aa73173b503b28c5,
         type: 3}
@@ -14755,7 +14755,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 27f811c78c01a49488e6d4adaa2b9750, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 18e60134d49f1684eb11545b78c18147, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1709887391
 Transform:
