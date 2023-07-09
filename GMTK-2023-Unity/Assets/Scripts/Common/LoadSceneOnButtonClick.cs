@@ -8,7 +8,7 @@ namespace Assets.Scripts.Common
     {
         [SerializeField] private int seneIndex;
 
-        private void Start()
+        private void Awake()
         {
             var button = GetComponent<Button>();
             button.onClick.AddListener(LoadScene);
