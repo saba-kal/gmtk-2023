@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class HeroAI : MonoBehaviour
 {
     [SerializeField] private GameObject _target;
+    [SerializeField] private Animator animator;
 
     private List<AIWeapon> weapons;
     private NavMeshAgent _agent;
@@ -26,6 +27,7 @@ public class HeroAI : MonoBehaviour
     {
         if (_target == null || GameManager.GameIsOver)
         {
+            animator.SetFloat("speed", 0f);
             return;
         }
 
@@ -34,6 +36,7 @@ public class HeroAI : MonoBehaviour
             _agent.SetDestination(_target.transform.position);
         }
 
+        animator.SetFloat("speed", _agent.velocity.sqrMagnitude);
         foreach (var weapon in weapons)
         {
             var objectsInRange = weapon.GetObjectsInRange();

@@ -185,7 +185,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2104189061534793114, guid: b294e63412b522243963cea24f47dcf4,
     type: 3}
   heroHitEffect: {fileID: 0}
-  damage: 2
+  damage: 3
   radius: 3
 --- !u!1 &4787536936526373715
 GameObject:

@@ -6,6 +6,7 @@ public class AISword : AIWeapon
 {
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRadius;
+    [SerializeField] private int damage = 4;
 
     private HeroAI hero;
 
@@ -30,8 +31,8 @@ public class AISword : AIWeapon
         var distanceToHero = Vector3.Distance(hero.transform.position, attackPoint.position);
         if (distanceToHero <= attackRadius)
         {
-            Debug.Log($"{gameObject.name} has swung his sword and hit {hero.gameObject.name}");
-            // TODO: damage the hero.
+            var health = hero.GetComponent<HeroHealth>();
+            health?.TakeDamage(damage);
         }
     }
 

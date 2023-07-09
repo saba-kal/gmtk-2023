@@ -1,12 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class Hammer : AIWeapon
 {
     [SerializeField] private GameObject effectPrefab;
+    [SerializeField] private Animator animator;
     [SerializeField] private float radius = 3f;
     [SerializeField] private float force = 100f;
+    [SerializeField] private float delay = 0.8f;
 
     private List<EnemyAI> enemyCharacters;
     private GameObject player;
@@ -38,6 +41,14 @@ public class Hammer : AIWeapon
 
     protected override void Fire()
     {
+        animator.SetTrigger("attack");
+        StartCoroutine(FireAfterTime());
+    }
+
+    private IEnumerator FireAfterTime()
+    {
+        yield return new WaitForSeconds(delay);
+
         var effect = Instantiate(effectPrefab, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
         CameraShake.Instance?.Shake();

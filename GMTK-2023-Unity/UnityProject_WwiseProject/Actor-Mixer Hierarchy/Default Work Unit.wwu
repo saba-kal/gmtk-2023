@@ -864,7 +864,11 @@
 				<RandomSequenceContainer Name="KoboldDialogue" ID="{535A56B9-C423-40FE-AE0D-38874B412ED9}" ShortID="248265424">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
