@@ -48,10 +48,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8C355E63-1D23-D2D2-8594-3EC8A3DB933C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{48F360A8-638B-9892-6206-B4E3755C33F3}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="51789560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knight hit 2.wav</ShortName>
+					<CachePath>SFX/Knight hit 2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="100859403" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>temp_menu_music.wav</ShortName>
 					<CachePath>SFX/temp_menu_music_D79FB2B7.wem</CachePath>
@@ -59,14 +63,6 @@
 				<File Id="106555270" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="151133245" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Concrete\FS_Concrete_01.wav</ShortName>
-					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="166207037" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Concrete\FS_Concrete_03.wav</ShortName>
-					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="235374308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_02.wav</ShortName>
@@ -76,25 +72,89 @@
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="303118175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fireball.wav</ShortName>
+					<CachePath>SFX/Fireball_10C4C929.wem</CachePath>
+				</File>
+				<File Id="311879739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold hit cry 1.wav</ShortName>
+					<CachePath>SFX/Kobold hit cry 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="314468422" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold dialogue 1.wav</ShortName>
+					<CachePath>SFX/Kobold dialogue 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="326462590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold hit cry 3.wav</ShortName>
+					<CachePath>SFX/Kobold hit cry 3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="397596173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knight Dialogue 3.wav</ShortName>
+					<CachePath>SFX/Knight Dialogue 3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="416788295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="461159172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sword swing.wav</ShortName>
+					<CachePath>SFX/Sword swing_10C4C929.wem</CachePath>
+				</File>
+				<File Id="477199330" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knight hit 1.wav</ShortName>
+					<CachePath>SFX/Knight hit 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="497428646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold dialogue 2.wav</ShortName>
+					<CachePath>SFX/Kobold dialogue 2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="553148624" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="563577695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold dialogue 5.wav</ShortName>
+					<CachePath>SFX/Kobold dialogue 5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="605946498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold dialogue 4.wav</ShortName>
+					<CachePath>SFX/Kobold dialogue 4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="606694774" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="670143975" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold dialogue 3 (what doesnt kill).wav</ShortName>
+					<CachePath>SFX/Kobold dialogue 3 (what doesnt kill)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="675448739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hero walk.wav</ShortName>
+					<CachePath>SFX/Hero walk_10C4C929.wem</CachePath>
+				</File>
+				<File Id="676197682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Throw.wav</ShortName>
+					<CachePath>SFX/Throw_10C4C929.wem</CachePath>
 				</File>
 				<File Id="724721706" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
 				</File>
-				<File Id="888852261" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
-					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_02_10C4C929.wem</CachePath>
+				<File Id="746819437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold step.wav</ShortName>
+					<CachePath>SFX/Kobold step_10C4C929.wem</CachePath>
+				</File>
+				<File Id="750091412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knight Dialogue 1.wav</ShortName>
+					<CachePath>SFX/Knight Dialogue 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="799687165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kobold hit cry 2.wav</ShortName>
+					<CachePath>SFX/Kobold hit cry 2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="962561102" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hammer swing with hit.wav</ShortName>
+					<CachePath>SFX/Hammer swing with hit_10C4C929.wem</CachePath>
 				</File>
 				<File Id="971143428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_03.wav</ShortName>
@@ -104,13 +164,22 @@
 					<ShortName>temp_game_music.wav</ShortName>
 					<CachePath>SFX/temp_game_music_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="1006901945" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knight Dialogue 2.wav</ShortName>
+					<CachePath>SFX/Knight Dialogue 2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1035699254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_02_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
+				<Event Id="3841200954" Name="Fireball" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.075625" DurationMax="1.075625">
+					<MediaRefs>
+						<MediaRef Id="303118175"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.0872912" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2195636714"/>
@@ -131,9 +200,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="841620460" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="151133245"/>
-								<MediaRef Id="166207037"/>
-								<MediaRef Id="888852261"/>
+								<MediaRef Id="746819437"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -145,6 +212,45 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1259611974" Name="HammerHit" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.93789583" DurationMax="0.93789583">
+					<MediaRefs>
+						<MediaRef Id="962561102"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1782238928" Name="KnightDialogue" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.5600624" DurationMax="2.84825">
+					<MediaRefs>
+						<MediaRef Id="397596173"/>
+						<MediaRef Id="750091412"/>
+						<MediaRef Id="1006901945"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3280501459" Name="KnightFootsteps" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.61882854" DurationMax="0.81607765">
+					<MediaRefs>
+						<MediaRef Id="675448739"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3677881057" Name="KnightHit" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.408" DurationMax="0.43466666">
+					<MediaRefs>
+						<MediaRef Id="51789560"/>
+						<MediaRef Id="477199330"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="435695680" Name="KoboldDialogue" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.0512084" DurationMax="4.6826873">
+					<MediaRefs>
+						<MediaRef Id="314468422"/>
+						<MediaRef Id="497428646"/>
+						<MediaRef Id="563577695"/>
+						<MediaRef Id="605946498"/>
+						<MediaRef Id="670143975"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4127005553" Name="KoboldHit" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.896" DurationMax="1.3164166">
+					<MediaRefs>
+						<MediaRef Id="311879739"/>
+						<MediaRef Id="326462590"/>
+						<MediaRef Id="799687165"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3991942870" Name="Music" DurationType="Infinite">
 					<SwitchContainers>
@@ -161,6 +267,16 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1328934038" Name="SwordSwing" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.304" DurationMax="0.304">
+					<MediaRefs>
+						<MediaRef Id="461159172"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="745179803" Name="Throw" DurationType="OneShot" DurationMin="0.103270836" DurationMax="0.103270836">
+					<MediaRefs>
+						<MediaRef Id="676197682"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 			<StateGroups>
@@ -184,5 +300,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B3F53FD0-3535-BBF9-7AD6-6C2362DE134F}</FileHash>
+	<FileHash>{9D42DD7A-891D-D2E9-E7DC-237947D2AAB4}</FileHash>
 </SoundBanksInfo>

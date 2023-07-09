@@ -4990,6 +4990,8 @@ GameObject:
   - component: {fileID: 4729886781036338818}
   - component: {fileID: 2733052212014616269}
   - component: {fileID: 8772186536403319437}
+  - component: {fileID: -4146907294025697081}
+  - component: {fileID: -7070948173019901347}
   m_Layer: 6
   m_Name: KoboldMagic
   m_TagString: Untagged
@@ -5110,12 +5112,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 5
+  soundName: Fireball
+  soundDelay: 1
   projectileSpeed: 20
   yOffset: 0
   range: 20
   projectileSpawnPoint: {fileID: 8699455237173510795}
   rockPrefab: {fileID: 5401276071887384839, guid: 00833648004b9d447a6656e1276c8bf1,
     type: 3}
+--- !u!114 &-4146907294025697081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016967063104516959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55db993d83804f04a9378275020f3c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEventName: KoboldDialogue
+  minInterval: 5
+  maxInterval: 10
+--- !u!114 &-7070948173019901347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016967063104516959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7135872b52f44149bbb7bffc77d3e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Footsteps
+  footStepInterval: 0.2
 --- !u!1001 &1441641296508692653
 PrefabInstance:
   m_ObjectHideFlags: 0

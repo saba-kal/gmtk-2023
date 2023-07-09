@@ -101,7 +101,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: cc0f4bda4406c54ab7487dcd7bef831a
     GuidInternal: 
-    m_lastTime: -8585131790551150366
+    m_lastTime: -8585127324141306019
     List:
     - name: Main
       guid: 5d71dbaf1a5a2b46903e2e4102b8422c
@@ -129,8 +129,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c39280528e8dad40a4a0d56025399269
     GuidInternal: 
-    m_lastTime: -8585131790551350660
+    m_lastTime: -8585127318624671414
     List:
+    - name: Fireball
+      guid: d4a412d939f97a4385f1e5d91f4e841d
+      id: 3841200954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: Fireball
+        ObjectType: 3
+        guid: d4a412d939f97a4385f1e5d91f4e841d
+      Path: Events\Default Work Unit\Fireball
+      maxAttenuation: 100
+      maxDuration: 1.075625
+      minDuration: 1.075625
     - name: Footsteps
       guid: 64ae9063d1cf034299496d299e4d6d98
       id: 2385628198
@@ -147,7 +164,109 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 100
       maxDuration: 0.8593651
-      minDuration: 0.386644
+      minDuration: 0.0872912
+    - name: HammerHit
+      guid: f7c7d98dd0447f4690ee3776264459c8
+      id: 1259611974
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: HammerHit
+        ObjectType: 3
+        guid: f7c7d98dd0447f4690ee3776264459c8
+      Path: Events\Default Work Unit\HammerHit
+      maxAttenuation: 100
+      maxDuration: 0.93789583
+      minDuration: 0.93789583
+    - name: KnightDialogue
+      guid: 95dacbe30b88bc4681ead24f0f74d5f3
+      id: 1782238928
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: KnightDialogue
+        ObjectType: 3
+        guid: 95dacbe30b88bc4681ead24f0f74d5f3
+      Path: Events\Default Work Unit\KnightDialogue
+      maxAttenuation: 100
+      maxDuration: 2.84825
+      minDuration: 2.5600624
+    - name: KnightFootsteps
+      guid: 38658ea446baba4388b3b1e49bb7824b
+      id: 3280501459
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: KnightFootsteps
+        ObjectType: 3
+        guid: 38658ea446baba4388b3b1e49bb7824b
+      Path: Events\Default Work Unit\KnightFootsteps
+      maxAttenuation: 100
+      maxDuration: 0.81607765
+      minDuration: 0.61882854
+    - name: KnightHit
+      guid: d13fd302ac2874458493f2628c9d3acf
+      id: 3677881057
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: KnightHit
+        ObjectType: 3
+        guid: d13fd302ac2874458493f2628c9d3acf
+      Path: Events\Default Work Unit\KnightHit
+      maxAttenuation: 100
+      maxDuration: 0.43466666
+      minDuration: 0.408
+    - name: KoboldDialogue
+      guid: 01c25679994f614da26cf78fba42bac3
+      id: 435695680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: KoboldDialogue
+        ObjectType: 3
+        guid: 01c25679994f614da26cf78fba42bac3
+      Path: Events\Default Work Unit\KoboldDialogue
+      maxAttenuation: 100
+      maxDuration: 4.6826873
+      minDuration: 1.0512084
+    - name: KoboldHit
+      guid: 551c61777195fc4c9a5145e4da8f768c
+      id: 4127005553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: KoboldHit
+        ObjectType: 3
+        guid: 551c61777195fc4c9a5145e4da8f768c
+      Path: Events\Default Work Unit\KoboldHit
+      maxAttenuation: 100
+      maxDuration: 1.3164166
+      minDuration: 0.896
     - name: Music
       guid: f263453e4da19f46845d0ecf19d032a8
       id: 3991942870
@@ -165,6 +284,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SwordSwing
+      guid: 67e3dda4709be146bda31675d7b88c59
+      id: 1328934038
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: SwordSwing
+        ObjectType: 3
+        guid: 67e3dda4709be146bda31675d7b88c59
+      Path: Events\Default Work Unit\SwordSwing
+      maxAttenuation: 100
+      maxDuration: 0.304
+      minDuration: 0.304
+    - name: Throw
+      guid: f86b7c281006de4981d15dfcb292ff18
+      id: 745179803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c39280528e8dad40a4a0d56025399269
+      - ElementName: Throw
+        ObjectType: 3
+        guid: f86b7c281006de4981d15dfcb292ff18
+      Path: Events\Default Work Unit\Throw
+      maxAttenuation: 100
+      maxDuration: 0.103270836
+      minDuration: 0.103270836
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -412,7 +565,7 @@ MonoBehaviour:
     m_lastTime: -8585131790551134728
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 050000000600000007000000c1000000c2000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

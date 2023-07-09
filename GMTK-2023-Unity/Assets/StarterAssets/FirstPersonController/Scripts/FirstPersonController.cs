@@ -57,9 +57,6 @@ namespace StarterAssets
         [Tooltip("How far in degrees can you move the camera down")]
         public float BottomClamp = -90.0f;
 
-        [Header("Sound")]
-        [SerializeField] private float _footStepInterval = 0.4f;
-
         // cinemachine
         private float _cinemachineTargetPitch;
 
@@ -72,9 +69,6 @@ namespace StarterAssets
         // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
-
-        //Sound
-        private float _timeSinceLastFootstep = 0;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
@@ -131,7 +125,6 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
-            PlayFootStepAudio();
         }
 
         private void LateUpdate()
@@ -280,23 +273,6 @@ namespace StarterAssets
             if (lfAngle < -360f) lfAngle += 360f;
             if (lfAngle > 360f) lfAngle -= 360f;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
-        }
-
-        private void PlayFootStepAudio()
-        {
-            if (_speed > 0.0f && Grounded)
-            {
-                if (_timeSinceLastFootstep > _footStepInterval)
-                {
-                    AkSoundEngine.PostEvent("Footsteps", gameObject);
-                    _timeSinceLastFootstep = 0;
-                }
-                _timeSinceLastFootstep += Time.deltaTime;
-            }
-            else
-            {
-                _timeSinceLastFootstep = float.MaxValue;
-            }
         }
 
         private void OnDrawGizmosSelected()

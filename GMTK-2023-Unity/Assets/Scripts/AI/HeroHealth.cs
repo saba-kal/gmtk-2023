@@ -19,6 +19,8 @@ public class HeroHealth : MonoBehaviour
 
         HeroHealthBar.Instance.SetHealth(Health / (float)startHealth);
 
+        AkSoundEngine.PostEvent("KnightHit", gameObject);
+
         //TODO: UI
         if (Health <= 0)
         {

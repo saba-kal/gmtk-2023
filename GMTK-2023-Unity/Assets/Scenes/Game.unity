@@ -5819,6 +5819,7 @@ GameObject:
   - component: {fileID: 479113617}
   - component: {fileID: 479113616}
   - component: {fileID: 479113615}
+  - component: {fileID: 479113619}
   m_Layer: 9
   m_Name: Character
   m_TagString: Player
@@ -5906,7 +5907,6 @@ MonoBehaviour:
   CinemachineCameraTarget: {fileID: 203956089}
   TopClamp: 90
   BottomClamp: -90
-  _footStepInterval: 0.4
 --- !u!114 &479113611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6006,6 +6006,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 1
+  soundName: SwordSwing
+  soundDelay: 0.7
   attackDelay: 0.7
   weaponModel: {fileID: 488610296}
   weaponAnimator: {fileID: 285620577}
@@ -6027,6 +6029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 2
+  soundName: Fireball
+  soundDelay: 1
   attackDelay: 1
   weaponModel: {fileID: 780968345}
   weaponAnimator: {fileID: 1822020971}
@@ -6048,6 +6052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 1
+  soundName: Throw
+  soundDelay: 0.5
   attackDelay: 0.5
   weaponModel: {fileID: 912873275}
   weaponAnimator: {fileID: 1713034989}
@@ -6073,6 +6079,20 @@ MonoBehaviour:
   - {fileID: 479113616}
   - {fileID: 479113615}
   m_WeaponType: 0
+--- !u!114 &479113619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479113606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7135872b52f44149bbb7bffc77d3e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Footsteps
+  footStepInterval: 0.2
 --- !u!1 &488610296
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,13 +7447,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275111522}
+  - component: {fileID: 1275111525}
   - component: {fileID: 1275111521}
   - component: {fileID: 1275111520}
   - component: {fileID: 1275111519}
   - component: {fileID: 1275111518}
   - component: {fileID: 1275111523}
   - component: {fileID: 1275111524}
-  - component: {fileID: 1275111525}
+  - component: {fileID: 1275111526}
+  - component: {fileID: 1275111527}
   m_Layer: 7
   m_Name: Hero
   m_TagString: Hero
@@ -7454,6 +7476,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 2.5
+  soundName: HammerHit
+  soundDelay: 0
   effectPrefab: {fileID: 7568364869063066375, guid: e103b7665aca44545be5d1e069db9e94,
     type: 3}
   radius: 5
@@ -7578,6 +7602,35 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.89, z: 0}
+--- !u!114 &1275111526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275111517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55db993d83804f04a9378275020f3c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEventName: KnightDialogue
+  minInterval: 5
+  maxInterval: 10
+--- !u!114 &1275111527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275111517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7135872b52f44149bbb7bffc77d3e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: KnightFootsteps
+  footStepInterval: 0.4
 --- !u!1001 &1334729999
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coolDown: 2.5
+  soundName: Throw
   projectileSpeed: 20
   yOffset: 0.3
   range: 20

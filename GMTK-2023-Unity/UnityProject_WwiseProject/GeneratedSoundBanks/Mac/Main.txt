@@ -1,6 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
+	435695680	KoboldDialogue			\Default Work Unit\KoboldDialogue	
+	745179803	Throw			\Default Work Unit\Throw	
+	1259611974	HammerHit			\Default Work Unit\HammerHit	
+	1328934038	SwordSwing			\Default Work Unit\SwordSwing	
+	1782238928	KnightDialogue			\Default Work Unit\KnightDialogue	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	3280501459	KnightFootsteps			\Default Work Unit\KnightFootsteps	
+	3677881057	KnightHit			\Default Work Unit\KnightHit	
+	3841200954	Fireball			\Default Work Unit\Fireball	
 	3991942870	Music			\Default Work Unit\Music	
+	4127005553	KoboldHit			\Default Work Unit\KoboldHit	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
@@ -20,18 +29,34 @@ State	ID	Name	State Group			Notes
 	4091656514	GameState	MusicStates			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	51789560	Knight hit 2	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Knight hit 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KnightHit\Knight hit 2		78432
 	100859403	temp_menu_music	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\temp_menu_music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\temp_menu_music\temp_menu_music		76992092
 	106555270	FS_Gravel_02	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Gravel\FS_Gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_02		34198
-	151133245	FS_Concrete_01	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\FS_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_01		42952
-	166207037	FS_Concrete_03	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\FS_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_03		63518
 	235374308	FS_Tile_02	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_02		53700
 	283295729	FS_Gravel_01	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Gravel\FS_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_01		43006
+	303118175	Fireball	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Fireball_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fireball		206616
+	311879739	Kobold hit cry 1	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold hit cry 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldHit\Kobold hit cry 1		212780
+	314468422	Kobold dialogue 1	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold dialogue 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldDialogue\Kobold dialogue 1		396732
+	326462590	Kobold hit cry 3	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold hit cry 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldHit\Kobold hit cry 3		172128
+	397596173	Knight Dialogue 3	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Knight Dialogue 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KnightDialogue\Knight Dialogue 3		491628
 	416788295	FS_Tile_03	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_03		58572
+	461159172	Sword swing	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Sword swing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sword swing		29280
+	477199330	Knight hit 1	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Knight hit 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KnightHit\Knight hit 1		83552
+	497428646	Kobold dialogue 2	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold dialogue 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldDialogue\Kobold dialogue 2		367752
 	553148624	FS_Dirt_01	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Dirt\FS_Dirt_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_01		43874
+	563577695	Kobold dialogue 5	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold dialogue 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldDialogue\Kobold dialogue 5		294232
+	605946498	Kobold dialogue 4	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold dialogue 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldDialogue\Kobold dialogue 4		201928
 	606694774	FS_Tile_01	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_01		37538
+	670143975	Kobold dialogue 3 (what doesnt kill)	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold dialogue 3 (what doesnt kill)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldDialogue\Kobold dialogue 3 (what doesnt kill)		899172
+	675448739	Hero walk	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Hero walk_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero walk		137528
+	676197682	Throw	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Throw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throw		10010
 	724721706	FS_Dirt_03	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Dirt\FS_Dirt_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_03		75892
-	888852261	FS_Concrete_02	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\FS_Concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_02		55048
+	746819437	Kobold step	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold step_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Kobold step		11484
+	750091412	Knight Dialogue 1	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Knight Dialogue 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KnightDialogue\Knight Dialogue 1		543416
+	799687165	Kobold hit cry 2	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Kobold hit cry 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KoboldHit\Kobold hit cry 2		252848
+	962561102	Hammer swing with hit	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Hammer swing with hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer swing with hit		180172
 	971143428	FS_Gravel_03	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Gravel\FS_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_03		48248
 	994870237	temp_game_music	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\temp_game_music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\temp_game_music\temp_game_music		3329648
+	1006901945	Knight Dialogue 2	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Knight Dialogue 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KnightDialogue\Knight Dialogue 2		546960
 	1035699254	FS_Dirt_02	C:\Projects\Unity\gmtk-2023_2\GMTK-2023-Unity\UnityProject_WwiseProject\.cache\Mac\SFX\Footsteps\Dirt\FS_Dirt_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_02		75892
 

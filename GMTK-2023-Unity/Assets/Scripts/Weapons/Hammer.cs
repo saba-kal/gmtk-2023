@@ -53,6 +53,7 @@ public class Hammer : AIWeapon
             if (playerHealth == null)
             {
                 Destroy(potentialEnemy, 10f);
+                AkSoundEngine.PostEvent("KoboldHit", potentialEnemy);
             }
             else
             {
