@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
             var possessSuccessful = characterPossessor.PossessRandomCharacter();
             if (!possessSuccessful)
             {
-                GameManager.Instance.SetGameOver(true);
+                GameManager.Instance.SetGameOver(true, false);
             }
         }
     }

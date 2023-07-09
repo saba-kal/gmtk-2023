@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     public string Name;
     public int MaxHealth;
+    public WeaponType weaponType;
 
     [SerializeField] private Animator _animator;
 
@@ -84,7 +85,6 @@ public class EnemyAI : MonoBehaviour
         var affectedObjects = _weapon.GetObjectsInRange();
         if (affectedObjects.Count > 0)
         {
-            Debug.Log($"{gameObject.name} triggered attack.");
             _animator.SetTrigger("attack");
 
             //Sometimes character gets stuck in attack state if animation gets interrupted.
@@ -95,7 +95,6 @@ public class EnemyAI : MonoBehaviour
 
     public void CompleteAttack()
     {
-        Debug.Log($"{gameObject.name} has attacked.");
         _weapon.Activate();
         SetState(AIState.Persue);
     }

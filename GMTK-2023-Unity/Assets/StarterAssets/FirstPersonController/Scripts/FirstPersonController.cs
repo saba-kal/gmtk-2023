@@ -123,6 +123,11 @@ namespace StarterAssets
 
         private void Update()
         {
+            if (PauseMenu.GameIsPaused || GameManager.GameIsOver)
+            {
+                return;
+            }
+
             JumpAndGravity();
             GroundedCheck();
             Move();

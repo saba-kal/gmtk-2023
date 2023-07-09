@@ -38,9 +38,4 @@ public class AIProjectile : AIWeapon
         projectile.transform.position = projectileSpawnPoint.position;
         projectile.SetVelocity(direction * projectileSpeed);
     }
-
-    private void OnDrawGizmos()
-    {
-
-    }
 }

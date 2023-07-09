@@ -6,7 +6,7 @@ public abstract class Weapon : MonoBehaviour
 
     private float _timeSinceLastActivation = 0f;
 
-    private void Update()
+    protected virtual void Update()
     {
         _timeSinceLastActivation += Time.deltaTime;
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2096491578585138258}
   - component: {fileID: 6638266282746297061}
   - component: {fileID: 6112900127773517661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,10 @@ MonoBehaviour:
   destroyOnHit: 0
   rigidbody: {fileID: 6638266282746297061}
   effectPrefab: {fileID: 0}
+  heroHitEffect: {fileID: 2264124297145547088, guid: 48234737d8ff64943b63609606c2be56,
+    type: 3}
+  damage: 1
+  radius: 1
 --- !u!1001 &5473067998897716960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -186,6 +190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58553dc29b4d86541ab1d1fb6431a46d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

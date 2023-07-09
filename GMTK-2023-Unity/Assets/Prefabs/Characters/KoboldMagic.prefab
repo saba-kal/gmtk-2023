@@ -5050,6 +5050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Kobold Mage
   MaxHealth: 3
+  weaponType: 2
   _animator: {fileID: 9187625258773251887}
 --- !u!114 &8584095840590333978
 MonoBehaviour:

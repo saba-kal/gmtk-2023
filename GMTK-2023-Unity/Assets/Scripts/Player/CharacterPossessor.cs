@@ -12,12 +12,14 @@ public class CharacterPossessor : MonoBehaviour
     private FirstPersonController _firstPersonController;
     private EnemyAI _possessedCharacter;
     private PlayerHealth _playerHealth;
+    private WeaponManager weaponManager;
 
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _firstPersonController = GetComponent<FirstPersonController>();
         _playerHealth = GetComponent<PlayerHealth>();
+        weaponManager = GetComponent<WeaponManager>();
         PossessRandomCharacter();
     }
 
@@ -31,6 +33,8 @@ public class CharacterPossessor : MonoBehaviour
             Debug.LogWarning("No more character left to possess.");
             return false;
         }
+
+        weaponManager.DisableAllWeapons();
 
         var characterIndex = Random.Range(0, enemyCharacters.Count);
         _possessedCharacter = enemyCharacters[characterIndex];
@@ -64,5 +68,6 @@ public class CharacterPossessor : MonoBehaviour
 
         CharacterInfo.Instance?.SetCharacterInfo(_possessedCharacter.Name, _possessedCharacter.MaxHealth);
         _playerHealth.SetHealth(_possessedCharacter.MaxHealth);
+        weaponManager.SwitchTo(_possessedCharacter.weaponType);
     }
 }

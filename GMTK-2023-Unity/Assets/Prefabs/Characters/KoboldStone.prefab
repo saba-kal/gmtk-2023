@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Kobold Ranger
   MaxHealth: 3
+  weaponType: 1
   _animator: {fileID: 1721118332978866441}
 --- !u!114 &8584095840590333978
 MonoBehaviour:

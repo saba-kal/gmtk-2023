@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7743642399503469297}
   - component: {fileID: 5566242186510008793}
   - component: {fileID: 5335679720774225222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 232065417955316232}
   - component: {fileID: 4773694368055880895}
   - component: {fileID: 5401276071887384839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,6 +184,9 @@ MonoBehaviour:
   rigidbody: {fileID: 4773694368055880895}
   effectPrefab: {fileID: 2104189061534793114, guid: b294e63412b522243963cea24f47dcf4,
     type: 3}
+  heroHitEffect: {fileID: 0}
+  damage: 2
+  radius: 3
 --- !u!1 &4787536936526373715
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +198,7 @@ GameObject:
   - component: {fileID: 4086605333526935806}
   - component: {fileID: 9171816098362123455}
   - component: {fileID: 3923477974682688141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
